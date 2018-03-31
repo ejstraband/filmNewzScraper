@@ -1,13 +1,3 @@
-10. In order to deploy your project to Heroku, you must set up an mLab provision. mLab is remote MongoDB database that Heroku supports natively. Follow these steps to get it running:
-
-11. Create a Heroku app in your project directory.
-
-12. Run this command in your Terminal/Bash window:
-
-    * `heroku addons:create mongolab`
-
-    * This command will add the free mLab provision to your project.
-
 13. When you go to connect your mongo database to mongoose, do so the following way:
 
 ```js
@@ -27,34 +17,6 @@ mongoose.connect(MONGODB_URI, {
 14. [Watch this demo of a possible submission](mongo-homework-demo.mov). See the deployed demo application [here](http://nyt-mongo-scraper.herokuapp.com/).
 
 15. Your site doesn't need to match the demo's style, but feel free to attempt something similar if you'd like. Otherwise, just be creative!
-
-## File Structure
-
-```
-├── controllers
-|  ├── fetch.js
-|  ├── headline.js
-|  └── note.js
-├── models
-|  ├── Headline.js
-|  ├── index.js
-|  └── Note.js
-├── public
-|  └── assets
-├── routes
-|  ├── api
-|  ├── index.js
-|  └── view
-├── scripts
-|  └── scrape.js
-└── views
-|   ├── home.handlebars
-|   ├── layouts
-|   └── saved.handlebars
-├── package-lock.json
-├── package.json
-└── server.js
-```
 
 ## Instructions
 
