@@ -1,22 +1,7 @@
-13. When you go to connect your mongo database to mongoose, do so the following way:
+Reference:
+[Watch this demo of a possible submission](mongo-homework-demo.mov)
 
-```js
-// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-
-// Set mongoose to leverage built in JavaScript ES6 Promises
-// Connect to the Mongo DB
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI, {
-  useMongoClient: true
-});
-```
-
-* This code should connect mongoose to your remote mongolab database if deployed, but otherwise will connect to the local mongoHeadlines database on your computer.
-
-14. [Watch this demo of a possible submission](mongo-homework-demo.mov). See the deployed demo application [here](http://nyt-mongo-scraper.herokuapp.com/).
-
-15. Your site doesn't need to match the demo's style, but feel free to attempt something similar if you'd like. Otherwise, just be creative!
+See the deployed demo application [here](http://nyt-mongo-scraper.herokuapp.com/).
 
 ## Instructions
 
